@@ -44,8 +44,7 @@ logging.basicConfig(level=logging.INFO,
 log = logging.getLogger("proctoring")
 
 # ── Env config ────────────────────────────────────────────────────────────────
-SECRET_KEY       = os.environ.get("JWT_SECRET_KEY", "891a3fef8a94b96f29a0fd17972c793a1a0383f787c593d0bd22d1f691886dc9
-")
+SECRET_KEY       = os.environ.get("JWT_SECRET_KEY", "891a3fef8a94b96f29a0fd17972c793a1a0383f787c593d0bd22d1f691886dc9")
 TEACHER_USERNAME = os.environ.get("TEACHER_USERNAME", "admin")
 TEACHER_PASSWORD = os.environ.get("TEACHER_PASSWORD", "admin123")
 JWT_HOURS        = int(os.environ.get("JWT_EXPIRE_HOURS", "9"))
