@@ -48,7 +48,7 @@ SECRET_KEY       = os.environ.get("JWT_SECRET_KEY", "891a3fef8a94b96f29a0fd17972
 TEACHER_USERNAME = os.environ.get("TEACHER_USERNAME", "admin")
 TEACHER_PASSWORD = os.environ.get("TEACHER_PASSWORD", "admin123")
 JWT_HOURS        = int(os.environ.get("JWT_EXPIRE_HOURS", "9"))
-DATABASE_URL     = os.environ.get("DATABASE_URL", "postgresql://postgres:Sairaam@20-Anjali@db.xqpthnsougficmgcjvik.supabase.co:5432/postgres")
+DATABASE_URL     = os.environ.get("DATABASE_URL", "")
 
 # ── DB helpers ────────────────────────────────────────────────────────────────
 _USE_PG = DATABASE_URL.startswith("postgresql") or DATABASE_URL.startswith("postgres")
