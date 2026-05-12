@@ -51,7 +51,7 @@ JWT_HOURS        = int(os.environ.get("JWT_EXPIRE_HOURS", "9"))
 DATABASE_URL     = os.environ.get("DATABASE_URL", "")
 
 # ── DB helpers ────────────────────────────────────────────────────────────────
-_USE_PG = DATABASE_URL.startswith("postgresql") or DATABASE_URL.startswith("postgres")
+_USE_PG = DATABASE_URL.startswith("postgresql") 
 _SQLITE_PATH = os.environ.get("SQLITE_PATH", "/app/data/violations.db")
 
 if _USE_PG:
